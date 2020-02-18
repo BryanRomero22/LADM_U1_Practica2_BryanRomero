@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30sp"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Escriba una Frase Por favor :"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/frase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/memoriaInterna"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Archivo Memoria Interna"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/memoriaSD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Archivo Memoria SD "
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre del Archivo :"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/nombreArchivo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/abrir"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="20dp"
+            android:text="Abrir" />
+
+        <Button
+            android:id="@+id/guardar"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Guardar" />
+    </LinearLayout>
+
+</LinearLayout>
